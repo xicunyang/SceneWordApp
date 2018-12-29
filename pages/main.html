@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>主页面--包含三个子页面</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.css" rel="stylesheet" />
+	</head>
+	<body>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			document.addEventListener("plusready", function() {
+				//在新页面加载之后  先去关闭上一个父页面	
+				setTimeout(function() {
+					plus.webview.currentWebview().opener().close("none");
+				}, 1000);
+			})
+		</script>
+	</body>
+</html>

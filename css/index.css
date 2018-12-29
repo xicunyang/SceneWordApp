@@ -1,0 +1,151 @@
+body {
+	background-color: rgba(154, 215, 218, 1);
+}
+
+/* 中部的圆形图片 */
+#middle_pic,
+#middle_inner_pic_front,
+#middle_inner_pic_back {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	backface-visibility: hidden;
+}         
+
+#middle_inner_pic_back,#middle_inner_pic_front{
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+#middle_pic {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;  
+	top: 10%; 
+	background-color: white;  
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+#middle_inner_pic_front {
+	background-image: url(../img/index/index_middle_front.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 3px solid rgb(255, 255, 255);
+	opacity: 1;   
+}
+
+#middle_inner_pic_back {
+	transform: rotateY(180deg);
+	background-image: url(../img/index/back2.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 3px solid rgb(255, 255, 255);
+	transform: rotateY(180deg);
+}
+               
+#middle_word {
+	background-image: url(../img/index/index_word.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 170px;
+	height: 45px;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 86%; 
+	opacity: 0;
+}
+  
+#bottom_pic {        
+	background-image: url(../img/index/index_cloud_bottom.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+}
+#bottom_version{
+	color:white;
+	width:100px;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	text-align: center;   
+	top:88%;
+	opacity: 0;
+	display: none;
+}
+
+/* 动画 */
+/*云上升*/
+@keyframes ani_cloud_grow {
+
+	from {
+		-webkit-transform: translateY(100%);
+	}
+
+	to {
+		-webkit-transform: translateY(0px);
+	}
+}
+
+/* 中间图片淡入 */
+@keyframes ani_center_pic_show {
+	from {
+		opacity: 0;
+		-webkit-transform: translateY(-70px);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+
+/* 中间文字淡入 */
+@keyframes ani_center_word_show {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* 中间图片淡出 */
+@keyframes ani_center_pic_fade_out {
+	10% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes ani_rotateX {
+	from {
+		transform: rotateY(0deg);
+	}
+
+	to {
+		transform: rotateY(180deg);
+	}
+}
