@@ -1,0 +1,24 @@
+body {
+	background-color: rgb(245, 245, 245);
+}
+
+/* 修改导航栏的颜色 */
+.mui-bar-nav {
+	background-color: rgb(97, 209, 215);
+
+}
+
+.mui-bar-nav h1 {
+	color: white;
+}
+
+.mui-pull-left {
+	color: white;
+}
+
+/* 修改开关的颜色 */
+.mui-switch.mui-active {
+	background-color: rgb(97, 209, 215);
+	border-color: rgb(97, 209, 215);
+	;
+}

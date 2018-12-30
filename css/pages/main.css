@@ -1,0 +1,28 @@
+/* 字体 */
+
+/* 标题栏 */
+.mui-bar-nav{
+	background-color: rgb(97,209,215);
+	height: 40px;
+}
+.mui-bar-nav h1{
+	color:white;
+}
+/* 底部选项卡的样式 */
+/* 底部选项卡中间的边框 */
+
+.mui-bar-tab{
+	/* border-top: 1px solid rgba(97,209,215,0.2); */
+}
+.mui-bar-tab a:first-child {
+	border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+.mui-bar-tab a {
+	background-color: rgb(255,255,255);
+}
+.mui-active span:last-child{
+	color:rgba(100,100,100,0.5);
+}
+#bottom_my span:last-child{
+	display: none;
+}

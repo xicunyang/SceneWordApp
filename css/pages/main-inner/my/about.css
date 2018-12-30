@@ -1,0 +1,41 @@
+body,.mui-content{
+	background-color: rgb(245,245,245);
+}
+
+/* 修改导航栏的颜色 */
+.mui-bar-nav {
+	background-color: rgb(97, 209, 215);
+
+}
+
+.mui-bar-nav h1 {
+	color: white;
+}
+
+.mui-pull-left {
+	color: white;
+}
+
+/* 中上部的LOGO */
+#logo{
+	width:150px;
+	height: 150px;
+	background-color: rgba(100,100,100,0.2);
+	margin:0 auto;
+	margin-top: 30px;
+}
+/* 中间的部分信息 */
+.mui-table-view{
+	width:95%;
+	margin:0 auto;
+	margin-top:20px;
+}
+/* 底部的声明信息 */
+#footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	font-size: 13px;
+	color:rgba(100,100,100,0.5);
+	text-align: center;
+}
