@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../../css/mui.css" rel="stylesheet" />
+		<link href="../../../css/iconfont.css" rel="stylesheet" />
+		<link href="../../../css/pages/main-inner/scene/scene-library.css" rel="stylesheet" />
+		<title>场景库</title>
+	</head>
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">场景库</h1>
+			<span class="mui-icon iconfont icon-pubuliu" id="change_style" msg="list"></span>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+
+
+					<div id="l_scenes"></div>
+
+
+
+					<div id="p_scenes">
+
+
+						<!-- <div class="p_scene_item">
+							<div class="p_scene_left">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="mui-slider-left mui-disabled">
+											<a class="mui-btn mui-btn-red mui-icon iconfont icon-shanchu"></a>
+											<a class="mui-btn mui-btn-my mui-icon iconfont icon-edit"></a>
+										</div>
+										<div class="mui-slider-handle">
+											<div class="mui-table-cell">
+												<div class="scene_card_index_left">
+													<span class="mui-badge mui-badge-my-index">1</span>
+												</div>
+												<div class="scene_card_word">
+													<span>食堂</span>
+												</div>
+												<div class="scene_card_num">
+													<span class="mui-badge mui-badge-my">111</span>
+												</div>											
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							
+							<div class="p_scene_right">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="mui-slider-right mui-disabled">
+											<a class="mui-btn mui-btn-red mui-icon iconfont icon-shanchu"></a>
+											<a class="mui-btn mui-btn-my mui-icon iconfont icon-edit"></a>
+										</div>
+										<div class="mui-slider-handle">
+											<div class="mui-table-cell">
+												<div class="scene_card_index_right">
+													<span class="mui-badge mui-badge-my-index">1</span>
+												</div>
+												<div class="scene_card_word">
+													<span>食堂</span>
+												</div>
+												<div class="scene_card_num">
+													<span class="mui-badge mui-badge-my">111</span>
+												</div>											
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+
+			<!-- 悬浮标签(添加场景按钮) -->
+			<div class="float_button">
+				<span class="mui-icon iconfont icon-jiahao"></span>
+			</div>
+
+
+
+
+			<div id="scene_add_sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+				<div id="sheet_progressbar" class="mui-progressbar">
+					<p class="mui-progressbar mui-progressbar-success" data-progress="20"><span></span></p>
+				</div>
+				<div class="mui-slider">
+					<div class="mui-slider-group">
+						<!--场景名称-->
+						<div class="mui-slider-item scene_name">
+							<div class="mui-input-row">
+								<input id="input_scene_word" type="text" placeholder="场景名称">
+							</div>
+							<div class="next_page_ch" id="sb_1">
+								<span class="mui-icon iconfont icon-shibai"></span>
+							</div>
+							<div class="next_page_jt" id="next_1">
+								<span class="mui-icon iconfont icon-youjiantou1"></span>
+							</div>
+						</div>
+						<!--场景概述-->
+						<div class="mui-slider-item scene_desc">
+							<div class="mui-input-row">
+								<textarea id="input_scene_desc" placeholder="添加场景描述"></textarea>
+							</div>
+							<div class="next_page_ch" id="sb_1">
+								<span class="mui-icon iconfont icon-shibai"></span>
+							</div>
+							<div class="next_page_jt" id="next_1">
+								<span class="mui-icon iconfont icon-youjiantou1"></span>
+							</div>
+						</div>
+						<!--场景图片-->
+						<div class="mui-slider-item scene_pic">
+							<div id="scene_pic_inner">
+								<div id="show_pic">
+									<span class="mui-icon iconfont icon-shangchuan"></span>
+								</div>
+								<div class="buttons">
+									<button type="button" class="mui-btn mui-btn-warning" id="from_camera">相机</button>
+									<button type="button" class="mui-btn mui-btn-danger" id="from_library">图库</button>
+									<div class="next_page_ch" id="sb_1">
+										<span class="mui-icon iconfont icon-shibai"></span>
+									</div>
+									<div class="next_page_jt" id="next_1">
+										<span class="mui-icon iconfont icon-youjiantou1"></span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!--保存场景-->
+						<div class="mui-slider-item scene_submit">
+							<div id="submit_show">
+								<span class="mui-icon iconfont icon-wancheng"></span>
+							</div>
+							<div class="buttons">
+								<button type="button" class="mui-btn mui-btn-danger" id="btn_cancel">取消</button>
+								<button type="button" class="mui-btn mui-btn-success-my" id="btn_submit">提交</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="../../../js/h.min.js"></script>
+	<script src="../../../js/mui.min.js"></script>
+	<script src="../../../js/util/utils.js"></script>
+	<script src="../../../js/main-inner/scene/scene-library.js"></script>
+</html>

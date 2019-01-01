@@ -1,0 +1,144 @@
+body,
+.mui-content {
+	background-color: rgb(245, 245, 245);
+}
+
+/* 字体 */
+.icon-jiahao:before {
+	color: white;
+	font-size: 25px;
+}
+
+.icon-edit:before {
+	font-size: 20px;
+}
+
+.icon-shanchu:before {
+	font-size: 23px;
+}
+
+/* 列表距顶部距离 */
+.mui-table-view{
+	top: 5px;
+	margin-bottom:10px;
+}
+
+/* 修改导航栏的颜色 */
+.mui-bar-nav {
+	background-color: rgb(97, 209, 215);
+}
+
+.mui-bar-nav h1 {
+	color: white;
+}
+
+.mui-pull-left {
+	color: white;
+}
+
+/* 常规布局 */
+.float_button {
+	width: 55px;
+	height: 55px;
+	background-color: rgb(255, 79, 84);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	/* box-shadow: 1px 1px 2px rgba(100,100,100,1); */
+	/* border: 2px solid rgba(255,79,84,1); */
+	z-index: 1000;
+}
+
+.float_button span {
+	display: block;
+	/* background-color: red; */
+	text-align: center;
+	line-height: 55px;
+}
+
+/* 可滚动区域与顶部有重合 */
+.mui-scroll-wrapper {
+	margin-top: 44px;
+}
+
+.mui-table-view-cell {
+	height: 60px;
+}
+
+/* 序号 */
+.word_card_index {
+	display: inline-block;
+	margin-top:10px;
+}
+.word_card_index span {
+	background-color: rgb(245, 214, 173);
+}
+
+/* 单词学习次数 */
+.word_card_num {
+	display: block;
+	float: right;
+	margin-top: 10px;
+}
+
+/* 单词本体word */
+.word_card_word {
+	display: inline-block;
+	position: absolute;
+	width: 250px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top:10px;
+	text-align: center;
+	/* 单行显示 */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.word_right_word{
+	background-color:rgb(244,48,61);
+	width: 300px;
+}
+.word_right_word span{
+	width:100%;
+	display: block;
+	font-size: 18px;
+	/* 单行显示 */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+
+
+/* 自定义左右滑动内的编辑的背景色 */
+.mui-btn-my,
+.mui-badge-my {
+	background-color: rgb(97, 209, 215);
+	color: white;
+}
+
+
+/* 动画 */
+/* 悬浮按钮进出动画 */
+@keyframes ani_float_btn_show {
+	from {
+		-webkit-transform: translateY(150px);
+	}
+
+	to {
+		-webkit-transform: translateY(0px); 
+	}
+}
+@keyframes ani_float_btn_hide {
+	from {
+		-webkit-transform: translateY(0px);
+	}
+
+	to {
+		-webkit-transform: translateY(150px); 
+	}
+}

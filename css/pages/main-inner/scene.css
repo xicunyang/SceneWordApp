@@ -88,3 +88,35 @@ body {
 	margin: 0 auto;
 	top:28px;
 }
+/* 动画 */
+.show_ani_show_left{
+	animation: ani_show_left 0.7s 1 forwards;
+}
+.show_ani_show_right{
+	animation: ani_show_right 0.7s 1 forwards; 
+}
+
+/* 动画 */
+
+@keyframes ani_show_left {
+	from {
+		-webkit-transform: translateX(-30%); 
+		opacity: 0;
+	}
+
+	to {
+		-webkit-transform: translateX(0px); 
+		opacity: 1;
+	}
+}
+@keyframes ani_show_right {
+	from {
+		-webkit-transform: translateX(30%); 
+		opacity: 0;
+	}
+
+	to {
+		-webkit-transform: translateX(0px); 
+		opacity: 1;
+	}
+}

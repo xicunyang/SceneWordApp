@@ -1,0 +1,569 @@
+body,
+.mui-content {
+	background-color: rgb(245, 245, 245);
+}
+
+/* 字体 */
+.icon-jiahao:before {
+	color: white;
+	font-size: 25px;
+}
+
+.icon-edit:before {
+	font-size: 20px;
+}
+
+.icon-shanchu:before {
+	font-size: 23px;
+}
+
+.icon-pubuliu:before {
+	color: white;
+}
+
+.icon-list:before {
+	display: block;
+	margin-top: 2px;
+	color: white;
+}
+
+.icon-youjiantou1:before {
+	color: white;
+	font-size: 50px;
+}
+
+.icon-shibai:before {
+	color: white;
+	font-size: 50px;
+}
+.icon-wancheng:before{
+	color:white;
+	font-size: 80px;
+}
+.icon-shangchuan:before{
+	color:rgba(100,100,100,0.7);
+	font-size: 80px;
+}
+
+/* 列表距顶部距离 */
+.mui-table-view {
+	top: 5px;
+	margin-bottom: 10px;
+}
+
+
+/* 修改导航栏的颜色 */
+.mui-bar-nav {
+	background-color: rgb(97, 209, 215);
+}
+
+.mui-bar-nav h1 {
+	color: white;
+}
+
+.mui-pull-left {
+	color: white;
+}
+
+/* 常规布局 */
+.float_button {
+	width: 55px;
+	height: 55px;
+	background-color: rgb(255, 79, 84);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	/* box-shadow: 1px 1px 2px rgba(100,100,100,1); */
+	/* border: 2px solid rgba(255,79,84,1); */
+	z-index: 1000;
+}
+
+.float_button span {
+	display: block;
+	/* background-color: red; */
+	text-align: center;
+	line-height: 55px;
+}
+
+/* 设置场景卡样式 */
+/* 可滚动区域与顶部有重合 */
+.mui-scroll-wrapper {
+	margin-top: 44px;
+}
+
+.mui-table-view-cell {
+	height: 60px;
+}
+
+.mui-table-view-cell {
+	border: 0px solid red;
+	background-color: white;
+}
+
+/* 序号 */
+#l_scenes .scene_card_index {
+	/* width: 40px; */
+	/* position: absolute;
+	margin-top:10px;
+	margin-left: 8px;
+	background-color: red; */
+}
+
+.mui-badge-my-index {
+	background-color: rgb(245, 214, 173);
+}
+
+#l_scenes .scene_card_index span {
+	display: block;
+	position: absolute;
+}
+
+/* 文字 */
+#l_scenes .scene_card_word {
+	position: absolute;
+	width: 250px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	/* 单行显示 */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#l_scenes .scene_card_word span {
+	font-size: 20px;
+	width: 200px;
+}
+
+/* 内部单词个数 */
+#l_scenes .mui-slider-handle .scene_card_num {
+	display: block;
+	float: right;
+	margin-top: 10px;
+}
+
+/* 自定义左右滑动内的编辑的背景色 */
+.mui-btn-my,
+.mui-badge-my {
+	background-color: rgb(97, 209, 215);
+	color: white;
+}
+
+/* 修改页面展示布局 */
+#change_style {
+	float: right;
+	right: 6px;
+}
+
+
+/* 卡片的样式 */
+.p_scene_left,
+.p_scene_right {
+	display: inline-block;
+	width: 43%;
+	height: 130px;
+	margin-top: 5%;
+}
+
+.p_scene_left {
+	float: left;
+	margin-left: 5%;
+	animation: ani_left_show 1s 1 forwards;
+
+}
+
+.p_scene_right {
+	float: right;
+	margin-right: 5%;
+	animation: ani_right_show 1s 1 forwards;
+}
+
+.p_scene_left .mui-table-view,
+.p_scene_right .mui-table-view {
+	height: 100%;
+}
+
+.p_scene_left .mui-table-view .mui-table-view-cell,
+.p_scene_right .mui-table-view .mui-table-view-cell {
+	height: 100%;
+	border: 0;
+}
+
+/* 卡片视图的圆角 */
+#p_scenes .mui-table-view-cell,
+#p_scenes .mui-table-view {
+	border-radius: 10px;
+}
+
+/* 卡片视图的上下边框  不是用的border  而是用的伪类 */
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-table-view:before {
+	height: 0;
+}
+
+/* 最外层  padding去掉 */
+#p_scenes .mui-table-view-cell {
+	padding: 0;
+}
+
+/* 继承100% */
+
+#p_scenes .mui-slider-handle {
+	width: 100%;
+	height: 100%;
+}
+
+#p_scenes .mui-table-cell {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* 设置卡片布局内部布局 */
+#p_scenes .scene_card_index_left {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1000;
+
+}
+
+#p_scenes .scene_card_index_right {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	z-index: 1000;
+}
+
+#p_scenes .scene_card_word {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+	line-height: 130px;
+	z-index: 1000;
+}
+
+#p_scenes .scene_card_word span {
+	color: rgba(100, 100, 100, 1);
+	font-size: 30px;
+	color: white;
+}
+
+#p_scenes .scene_card_num {
+	display: block;
+	left: 0;
+	right: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+/* 卡片视图的图片背景 */
+/* #p_scenes .scene{
+	background-image:url(../../../../img/index/index_middle_front.png);
+	background-size: 100% 100%;
+	设置高斯模糊
+	filter: blur(2px);
+} */
+
+.gaosi {
+	background-image: url(../../../../img/index/index_middle_front.png);
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	z-index: -1;
+	filter: blur(6px);
+}
+
+/* 添加场景  底部弹出框 */
+#scene_add_sheet {
+	z-index: 1000;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	/* background-color: rgba(97, 209, 215,0.7); */
+}
+
+.mui-slider,
+.mui-slider-group {
+	height: 100%;
+	/* background-color: rgba(97, 209, 215, 0.7); */
+}
+
+.mui-slider-item {
+	background-color: rgba(97, 209, 215, 1);
+}
+
+.mui-slider-item {
+	width: 100%;
+	height: 100%;
+}
+
+/* 输入框的样式 */
+.mui-input-row {
+	height: 50px;
+	top: 20px;
+}
+
+.mui-input-clear:before {
+	display: none;
+}
+
+#input_scene_word {
+	position: absolute;
+	height: 50px;
+	font-size: 18px;
+	width: 90%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+
+.next_page_jt,
+.next_page_ch {
+	width: 50px;
+	height: 50px;
+	/* background-color: red; */
+	position: absolute;
+	top: 110px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.next_page_jt {
+	z-index: 1000;
+}
+
+.next_page_ch {
+	opacity: 0;
+	z-index: 999;
+}
+
+.show_ch {
+	animation: ani_ch_show 1s 1 forwards;
+}
+
+.show_jt {
+	animation: ani_jt_show 1s 1 forwards;
+}
+
+.hide_ch {
+	animation: ani_ch_hide 1s 1 forwards;
+}
+
+.hide_jt {
+	animation: ani_jt_hide 1s 1 forwards;
+}
+
+/* 进度条颜色 */
+.mui-progressbar span {
+	background-color: white;
+}
+
+/* 第二页 */
+/* 场景描述 */
+.scene_desc .mui-input-row {
+	height: 80px;
+}
+
+#input_scene_desc {
+	width: 90%;
+	height: 80px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border-radius: 7px;
+	border: 0;
+	font-size: 18px;
+}
+
+.scene_desc .next_page_jt,
+.scene_desc .next_page_ch {
+	top: 120px;
+}
+
+/* 第三页 */
+/* 图片页 */
+#show_pic {
+	width: 200px;
+	height: 150px;
+	background-color: white;
+	position: absolute;
+	left: 20px;
+	top: 22px;
+	border-radius: 6px;
+	/* background-image: url(/storage/emulated/0/Android/data/io.dcloud.HBuilder/apps/HBuilder/doc/1546344593440.jpg); */
+	background-size: 100% 100%;
+}
+
+.scene_pic .buttons {
+	width: 100px;
+	position: absolute;
+	right: 20px;
+	top: 22px;
+	height: 150px;
+}
+
+.scene_pic .buttons button:first-child {
+	margin-top: 0px;
+}
+
+.scene_pic .buttons button {
+	width: 100%;
+	height: 40px;
+	display: block;
+	margin: 10px 0;
+}
+.icon-shangchuan{
+	position: absolute;
+	left:0;right: 0;
+	margin:0 auto;
+	text-align: center;
+	line-height: 140px;
+}
+
+/* 第四页 */
+/* 提交页 */
+.scene_submit .buttons {
+	width: 65%;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 120px;
+}
+
+.scene_submit .buttons button {
+	height: 100%;
+	width: 100px;
+}
+#btn_cancel{
+	float: left;
+}
+#btn_submit{
+	float: right;
+}
+.mui-btn-success-my{
+	background-color: rgb(67,181,68);
+	border: 1px solid rgb(67,181,68);
+	color:white;
+}
+#submit_show{
+	width:100px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	text-align: center;
+	top:20px;
+}
+
+/* 动画 */
+/* 卡片视图两侧图片淡入 */
+@keyframes ani_left_show {
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(-50px);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+}
+
+@keyframes ani_right_show {
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(50px);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+}
+
+/* 悬浮按钮进出动画 */
+@keyframes ani_float_btn_show {
+	from {
+		-webkit-transform: translateY(150px);
+	}
+
+	to {
+		-webkit-transform: translateY(0px);
+	}
+}
+
+@keyframes ani_float_btn_hide {
+	from {
+		-webkit-transform: translateY(0px);
+	}
+
+	to {
+		-webkit-transform: translateY(150px);
+	}
+}
+
+/* 箭头和叉号的出现动画 */
+@keyframes ani_jt_show {
+	from {
+		-webkit-transform: translateX(0px);
+	}
+
+	to {
+		-webkit-transform: translateX(29px);
+	}
+}
+
+@keyframes ani_ch_show {
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(0px);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateX(-29px);
+	}
+}
+
+/* 箭头和叉号的关闭动画 */
+@keyframes ani_jt_hide {
+	from {
+		-webkit-transform: translateX(29px);
+	}
+
+	to {
+		-webkit-transform: translateX(0px);
+	}
+}
+
+@keyframes ani_ch_hide {
+	from {
+		opacity: 1;
+		-webkit-transform: translateX(-29px);
+	}
+
+	to {
+		opacity: 0;
+		-webkit-transform: translateX(0px);
+	}
+}

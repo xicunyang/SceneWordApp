@@ -1,0 +1,33 @@
+body,.mui-content{
+	background-color: rgb(245,245,245);
+}
+
+/* 修改导航栏的颜色 */
+.mui-bar-nav {
+	background-color: rgb(97, 209, 215);
+}
+
+.mui-bar-nav h1 {
+	color: white;
+}
+
+.mui-pull-left {
+	color: white;
+}
+
+/* 常规布局 */
+/* 输入框的样式 */
+.mui-input-row{
+	height: 50px;
+	top:10px;
+}
+#input_scene_word{
+	position: absolute;
+	height: 50px;
+	font-size: 18px;
+	width:90%;
+	left:0;
+	right: 0;
+	margin: 0 auto;
+	
+}

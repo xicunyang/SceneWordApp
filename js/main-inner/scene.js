@@ -4,6 +4,12 @@ mui(".mui-scroll-wrapper").scroll({
 	indicators: false, //是否显示滚动条,默认是true
 });
 
+// 点击卡片事件
+h("#scenes_library").tap(function(){
+	//跳转页面
+	utils.openWindow_no_extras("../../pages/main-inner/scene/scene-library.html","scene-library");
+})
+
 //  页面跟随手指滑动
 var _index, _self, _next;
 mui.plusReady(function() {
